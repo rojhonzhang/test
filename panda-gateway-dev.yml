@@ -1,4 +1,18 @@
 ignore:
   urls:
-    - /**/*.css
-    - /auth/**
+  - /**/*.css
+  - /auth/**
+  - /admin/user/mobile/**
+  - /refresh/**
+  - /swagger-ui.html
+  - /swagger-resources/**
+  - /*/v2/api-docs
+  - /webjars/**
+logging:
+  level:
+      org.springframework: INFO #INFO
+      com.yukong.panda.gateway: DEBUG
+swagger:
+  client:
+    - panda-user-service
+    - panda-gen-service
